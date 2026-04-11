@@ -1,8 +1,6 @@
 # example-frontend
 
-This project is created to help learn docker configurations for frontend projects. The README starting from "Prerequisites" is written without Docker in mind so student has to figure out how to construct their configuration based on the README. However, there are some additional helpers added in the README and in the exercise description.
-
-> Notice, that all the information is not needed in all the exercises. Don't just copy-paste.
+This project is created to help learn docker configurations for frontend projects. The README starting from "Prerequisites" is written without Docker in mind. I have modified this according to the instructions and created the Dockerfile
 
 # Prerequisites
 
@@ -20,8 +18,6 @@ Install all packages with `npm install`
 
 # Starting in production mode
 
-## Exercise 1.12 -> to run the project
-
 First, you need to build the static files with `npm run build`
 
 This will generate them into `build` folder.
@@ -33,8 +29,3 @@ Use npm package called serve to serve the project in port 5001:
 - serve: `serve -s -l 5001 build`
 
 Test that the project is running by going to <http://localhost:5001>
-
-## Exercise 1.14 -> to connect to backend
-
-By default, the expected path to backend is /api. This is where the application will send requests. 
-To manually configure API path, build with `REACT_APP_BACKEND_URL` environment value set, for example `REACT_APP_BACKEND_URL=http://example.com npm run build`
