@@ -1,3 +1,7 @@
+# link to the deployed application
+
+https://example-frontend-lzvy.onrender.com
+
 # example-frontend
 
 This project is created to help learn docker configurations for frontend projects. The README starting from "Prerequisites" is written without Docker in mind. I have modified this according to the instructions and created the Dockerfile
