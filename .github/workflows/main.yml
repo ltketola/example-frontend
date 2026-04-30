@@ -1,0 +1,23 @@
+name: Cloud frontend  app
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: example-frontend-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v6
+
+deploy:
+  runs-on: ubuntu-latest
+  steps:
+    - uses: JorgeLNJunior/render-deploy@v1.5.0
+      with:
+        service_id: ${{ secrets.RENDER_SERVICE_ID }}
+        api_key: ${{ secrets.RENDER_API_KEY }}
+        wait_deploy: true
