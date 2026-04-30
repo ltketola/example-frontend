@@ -9,6 +9,7 @@ import Exercise from "./Exercise";
 
 const ExerciseList = () => (
   <div className="exercise-list">
+    <p>CI/CD test...</p>
     <h3>Part 1</h3>
     <Exercise exerciseNumber="1.12" ExerciseComponent={<AmIRunning />} />
     <Exercise exerciseNumber="1.14" ExerciseComponent={<BackendConnection />} />
